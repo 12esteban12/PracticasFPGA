@@ -1,5 +1,4 @@
----
-## Documento Explicativo: Código VHDL para Fundido de LED RGB (`rgb_fader.vhd`)
+# Documento Explicativo: Código VHDL para Fade LEDS EDU-CIAA-FPGA
 
 **1. Introducción**
 
