@@ -92,12 +92,11 @@ Si deseas contribuir, por favor sigue las guías estándar (fork, pull request, 
 
 ## Autor
 
-* **[Esteban De Blasis / 12esteban12]**
+* **Esteban De Blasis / github.com/12esteban12**
 * estebandeblasis@gmail.com 
 
-## Licencia (Opcional pero Recomendado)
+## Licencia 
 
-Este proyecto se distribuye bajo la Licencia [Nombre de la Licencia, ej. MIT, Apache 2.0, GPLv3]. Ver el archivo `LICENSE` para más detalles.
-(Si decides agregar una licencia, crea un archivo `LICENSE` en la raíz del repositorio con el texto de la licencia elegida).
+Este proyecto se distribuye bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
 
 ---
