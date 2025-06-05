@@ -1,0 +1,32 @@
+set_frequency clk 12
+
+#I/O
+set_io clk 94
+set_io reset 37
+
+set_io hex[0] 96
+set_io hex[1] 98
+set_io hex[2] 104
+set_io hex[3] 106
+
+set_io -pullup yes dp_in[0] 15
+set_io an[0] 79
+
+set_io -pullup yes dp_in[1] 16
+set_io an[1] 81
+
+set_io -pullup yes dp_in[2] 21
+set_io an[2] 83
+
+set_io -pullup yes dp_in[3] 22
+set_io an[3] 85
+
+
+set_io sseg[0] 124
+set_io sseg[1] 130
+set_io sseg[2] 137
+set_io sseg[3] 143
+set_io sseg[4] 144
+set_io sseg[5] 128
+set_io sseg[6] 135
+set_io sseg[7] 139 #Punto decimal

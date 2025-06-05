@@ -1,0 +1,10 @@
+set_frequency clk 12
+
+#I/O
+set_io clk 94
+set_io rst 37
+
+set_io -pullup yes signal_in 15
+
+set_io signal_out 124
+set_io en_disp_out 79

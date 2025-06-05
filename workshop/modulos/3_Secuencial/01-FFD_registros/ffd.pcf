@@ -1,0 +1,7 @@
+#Clocks
+set_frequency clk 12
+
+#I/O
+set_io d 31
+set_io clk 94
+set_io q 1

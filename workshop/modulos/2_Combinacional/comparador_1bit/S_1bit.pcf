@@ -1,0 +1,8 @@
+set_io A 31     #pin 31 Pulsador 1, se asigna a A
+set_io B 32     #pin 32 Pulsador 2, se asigna a B
+set_io S 1      #pin 1 led 1, se asigna a S
+
+# Descomentar para usar el comparador de un bit completo.
+# set_io gt_out 2
+# set_io lt_out 3
+

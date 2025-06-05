@@ -1,0 +1,5 @@
+### Listado de pulsadores y led para el mux 2 a 1
+set_io in[0] 31
+set_io in[1] 32
+set_io sel 33
+set_io out 1

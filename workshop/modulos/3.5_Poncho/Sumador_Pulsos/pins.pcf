@@ -1,0 +1,28 @@
+set_frequency clk 12
+
+#I/O
+set_io clk 94
+set_io rst 106
+
+set_io -pullup yes btn_0_in 15
+set_io -pullup yes btn_1_in 16
+set_io -pullup yes btn_2_in 21
+set_io -pullup yes btn_3_in 22
+
+
+set_io en_disp[0] 85
+set_io en_disp[1] 83
+set_io en_disp[2] 81
+set_io en_disp[3] 79
+
+
+set_io digit_out[0] 124
+set_io digit_out[1] 130
+set_io digit_out[2] 137
+set_io digit_out[3] 143
+set_io digit_out[4] 144
+set_io digit_out[5] 128
+set_io digit_out[6] 135
+set_io digit_out[7] 139 #Punto decimal
+
+set_io rst_led 1
