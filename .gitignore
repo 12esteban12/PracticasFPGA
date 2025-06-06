@@ -16,3 +16,10 @@ workshop/modulos/3_Secuencial/01-FFD_registros/vscode_stdout.log
 2-FPGABurst/vscode_stdout.log
 vscode_stdout.log
 vscode_stderr.log
+workshop/modulos/4_Hardware/4_2_SPWM/top.json
+workshop/modulos/4_Hardware/4_2_SPWM/top.bin
+workshop/modulos/4_Hardware/4_2_SPWM/top.asc
+workshop/modulos/4_Hardware/4_1_Memorias/top.json
+workshop/modulos/4_Hardware/4_1_Memorias/top.bin
+workshop/modulos/4_Hardware/4_1_Memorias/top.asc
+workshop/modulos/4_Hardware/4_1_Memorias/test.vcd

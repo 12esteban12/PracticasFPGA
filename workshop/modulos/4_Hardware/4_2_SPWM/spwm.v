@@ -62,12 +62,14 @@ endmodule //PWM_generator
 
 module RAM_DUAL 
 
-  #(parameter WORD_LENGTH = 8,	//Bits de cada palabra
-    parameter ADDR_LENGTH = 8)	//Bits de direcciones
+  #(parameter WORD_LENGTH = 8,	  //Bits de cada palabra
+    parameter ADDR_LENGTH = 8,	  //Bits de direcciones
+    parameter MEM_INIT_FILE = "mem_data.mem"  //Archivo de inicializacion de memoria
+    )
 
   (input wire w_clk,				            //Write clock
    input wire r_clk,							//Read clock
-   input wire write,			                //Write enable
+   input wire write,			                  //Write enable
    input [ADDR_LENGTH-1 : 0] w_addr,	        //Write address
    input [ADDR_LENGTH-1 : 0] r_addr,	        //Read address
    input wire [WORD_LENGTH-1 : 0] data_in,		//Dato de entrada
@@ -78,7 +80,7 @@ module RAM_DUAL
 
   //LEER EL CONTENIDO DE LA MEMORIA DESDE UN ARCHIVO .mem
     initial begin
-        $readmemh("mem_data.mem", MEMORY);
+        $readmemh(MEM_INIT_FILE, MEMORY);
     end
   
   // Lectura (dominio w_clk)

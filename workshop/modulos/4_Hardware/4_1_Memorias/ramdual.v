@@ -23,14 +23,14 @@ module RAM_DUAL
   //Bloque de memoria (** denota potencia)
   reg[WORD_LENGTH-1:0] MEMORY[2**ADDR_LENGTH-1:0];
   
-  // Lectura (dominio w_clk)
+  //Escritura (dominio r_clk)
   always @(posedge w_clk) begin
     if (write==1'b1) begin
       MEMORY[w_addr] <= data_in;
     end
   end
   
-  //Escritura (dominio r_clk)
+  // Lectura (dominio w_clk)
   always @(posedge r_clk) begin
     data_out <= MEMORY[r_addr];
   end

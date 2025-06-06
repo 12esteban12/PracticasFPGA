@@ -1,7 +1,7 @@
 set_io clk       94
 set_io rst       31
 set_io pwm_out   1
-set_io dummy[0]  2
-set_io dummy[1]  3
-set_io dummy[2]  4
+set_io pwm_out_a  2
+set_io pwm_out_b  3
+set_io pwm_out_c  4
 
