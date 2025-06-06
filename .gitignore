@@ -9,3 +9,10 @@ workshop/modulos/3_Secuencial/01-FFD_registros/top.bin
 workshop/modulos/3_Secuencial/01-FFD_registros/top.json
 workshop/modulos/3_Secuencial/01-FFD_registros/vscode_stderr.log
 workshop/modulos/3_Secuencial/01-FFD_registros/vscode_stdout.log
+2-FPGABurst/top.asc
+2-FPGABurst/top.bin
+2-FPGABurst/top.json
+2-FPGABurst/vscode_stderr.log
+2-FPGABurst/vscode_stdout.log
+vscode_stdout.log
+vscode_stderr.log
