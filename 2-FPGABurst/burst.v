@@ -6,15 +6,25 @@
 module PwmFrequencySwitcher #(
     // --- Parámetros de Configuración ---
     parameter CLK_SISTEMA_FREQ   = 12_000_000,   // Frecuencia del reloj del sistema en Hz (ej. 12 MHz)
-    parameter FREQ_A             = 10,         // Frecuencia para el estado A en Hz
+    parameter FREQ_A             = 10,           // Frecuencia para el estado A en Hz
     parameter PULSES_A           = 10,           // Número de pulsos a generar en estado A
-    parameter FREQ_B             = 5,         // Frecuencia para el estado B en Hz
-    parameter PULSES_B           = 20,           // Número de pulsos a generar en estado B
-    parameter DUTY_CYCLE_PERCENT = 50            // Ciclo de trabajo de la señal PWM (0 a 100)
+    parameter FREQ_B             = 2,            // Frecuencia para el estado B en Hz
+    parameter PULSES_B           = 5,            // Número de pulsos a generar en estado B
+    parameter DUTY_CYCLE_PERCENT = 50,           // Ciclo de trabajo de la señal PWM (0 a 100)
+    parameter SOFTSTART_MS       = 3000          // Duración del arranque suave en milisegundos
 )(
-    input  wire clk,
-    input  wire rst_n,
-    output reg  pwm_out
+    // --- Puertos de Entrada/Salida ---
+    // Basado en el pinout corregido:
+    input  wire clk,        // Reloj del sistema (Pin 94)
+    input  wire rst_n,      // Reset activo en bajo (Pulsador 1 - Pin 31)
+    input  wire fault_in,   // Entrada de falla (Pulsador 2 - Pin 32)
+    
+    output reg  pwm_out,    // Salida PWM principal (LED 1 - Pin 1)
+    
+    // Salidas de estado para debugging (ej. LED 2, 3, 4)
+    output wire state_A_out,
+    output wire state_B_out,
+    output wire state_SS_out
 );
 
     // --- Constantes Locales Calculadas ---
